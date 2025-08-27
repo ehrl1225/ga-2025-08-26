@@ -2,6 +2,7 @@ name: work-1
 on:
   push:
     paths:
+      - '.github/workflows/**'
       - 'Dockerfile'
       - 'index.html'
     branches:
