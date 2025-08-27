@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: create-password-html
         run: |
-          echo "${secrets.PASSWORD_HTML}" > password.html
+          echo "${{secrets.PASSWORD_HTML}}" > password.html
   makeTagAndRelease:
     runs-on: ubuntu-latest
     needs: makeSecret
