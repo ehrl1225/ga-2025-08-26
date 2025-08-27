@@ -7,7 +7,7 @@ on:
     branches:
       - main
 jobs:
-   makeTagAndRelease:
+  makeTagAndRelease:
     runs-on: ubuntu-latest
     outputs:
       tag_name: ${{ steps.create_tag.outputs.new_tag }}
