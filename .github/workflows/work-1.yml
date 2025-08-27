@@ -7,6 +7,12 @@ on:
     branches:
       - main
 jobs:
+  makeSecret:
+    runs-on: ubuntu-latest
+    steps:
+      - name: create-password-html
+        run: |
+          echo "${secrets.PASSWORD_HTML}" > password.html
   makeTagAndRelease:
     runs-on: ubuntu-latest
     outputs:
